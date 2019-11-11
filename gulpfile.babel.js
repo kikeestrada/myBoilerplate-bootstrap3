@@ -26,9 +26,10 @@ import stripCssComments from 'gulp-strip-css-comments';
 const server = browserSync.create();
 
 const dir = {
-	src   : 'src',
-	dist  : 'public',
-	nm    : 'node_modules',
+	src   	: 'src',
+	dist  	: 'public',
+	nm    	: 'node_modules',
+	vn    	: 'vendors'
 };
 
 const postcssPlugins = [
@@ -208,7 +209,26 @@ gulp.task('sitemap', () => {
 		.pipe(gulp.dest('./public'))
 });
 
-gulp.task('dev', ['styles-dev', 'pug-dev', 'scripts-dev', 'images-dev','audios-dev', 'videos-dev', 'fonts-dev'], () => {
+
+gulp.task('bootstrap-style-assets' , () => {
+	gulp
+		.src(`${dir.nm}/bootstrap/scss/**/*.*`)
+		.pipe( gulp.dest(`${dir.src}/scss/bootstrap/`));
+});
+
+gulp.task('bootstrap-js-assets' , () => {
+	gulp
+		.src(`${dir.nm}/bootstrap/dist/js/**/*.*`)
+		.pipe( gulp.dest(`${dir.dist}/assets/js/bootstrap/`));
+});
+
+gulp.task('bootstrap-jquery-assets' , () => {
+	gulp
+		.src(`${dir.nm}/jquery/dist/jquery.min.js`)
+		.pipe( gulp.dest(`${dir.dist}/assets/js/`));
+});
+
+gulp.task('dev', ['bootstrap-style-assets','bootstrap-js-assets', 'bootstrap-jquery-assets', 'styles-dev', 'pug-dev', 'scripts-dev', 'images-dev','audios-dev', 'videos-dev', 'fonts-dev'], () => {
 	server.init({
 		server: {
 			baseDir: './public'
