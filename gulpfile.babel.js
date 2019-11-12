@@ -77,17 +77,17 @@ gulp.task('styles-build', () => {
 		.pipe(stripCssComments({
 			preserve: false
 		}))
-		.pipe(uncss({
-			html : [
-				'./public/*.html'
-			],
-			ignore: [
-				'.class-name'
-			],
-			ignoreSheets: [
-				//
-			]
-		}))
+		// .pipe(uncss({
+		// 	html : [
+		// 		'./public/*.html'
+		// 	],
+		// 	ignore: [
+		// 		'.class-name'
+		// 	],
+		// 	ignoreSheets: [
+		// 		//
+		// 	]
+		// }))
 		.pipe(gulp.dest('./public/assets/css/'))
 });
 
