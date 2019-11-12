@@ -1,0 +1,41 @@
+div(class='container')
+	div(class='row')
+		div(class='col')
+			//div(class='panel-group', role='tablist', id='accordion' + i)
+			//	-for (var i=1; i<=3; i++)
+			//		//----------------------------------------------------
+			//		div(class='panel panel-default')
+			//			div(class='collapsed panel-heading',role="tab",id='heading' + i, data-toggle="collapse" data-target='#collapse' + i)
+			//				h4.panel-tittle encabezado#{i}
+			//			div(class='panel-collapse collapse', id='collapse' + i)
+			//				.panel-body
+			//					p  Lorem ipsum dolor sit amet, consectetur adipisicing elppit. Aperiam consequuntur
+			//					| nostrum architecto beatae quas, doloremque blanditiis officia sit repellendus ipsam
+			//					| atque. Eos velit voluptates amet expedita modi! Eveniet, suscipit, molestiae!
+
+
+			#accordionExample.accordion
+				.card.z-depth-0.bordered
+					#headingOne.card-header
+						h5.mb-0
+							button.btn.btn-link(type='button', data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+								| Collapsible Group Item #1
+					#collapseOne.collapse.show(aria-labelledby='headingOne', data-parent='#accordionExample')
+						.card-body
+							| Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+				.card.z-depth-0.bordered
+					#headingTwo.card-header
+						h5.mb-0
+							button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+								| Collapsible Group Item #2
+					#collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordionExample')
+						.card-body
+							| Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+				.card.z-depth-0.bordered
+					#headingThree.card-header
+						h5.mb-0
+							button.btn.btn-link.collapsed(type='button', data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+								| Collapsible Group Item #3
+					#collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordionExample')
+						.card-body
+							| Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3

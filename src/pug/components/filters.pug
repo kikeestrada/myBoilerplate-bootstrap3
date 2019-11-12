@@ -1,0 +1,30 @@
+.container.mt-3
+	h2 Filterable Table
+	p
+		| Type something in the input field to search the table for first names, last names or emails:
+	input#myInput.form-control(type='text', placeholder='Search..')
+	br
+	table.table.table-bordered
+		thead
+			tr
+				th Firstname
+				th Lastname
+				th Email
+		tbody#myTable
+			tr
+				td John
+				td Doe
+				td john@example.com
+			tr
+				td Mary
+				td Moe
+				td mary@mail.com
+			tr
+				td July
+				td Dooley
+				td july@greatstuff.com
+			tr
+				td Anja
+				td Ravendale
+				td a_r@test.com
+	p Note that we start the search in tbody, to prevent filtering the table headers.

@@ -1,0 +1,28 @@
+.container.mt-3
+	h2 Toggleable Tabs
+	br
+	// Nav tabs
+	ul.nav.nav-tabs
+		li.nav-item
+			a.nav-link.active(data-toggle='tab', href='#home') Home
+		li.nav-item
+			a.nav-link(data-toggle='tab', href='#menu1') Menu 1
+		li.nav-item
+			a.nav-link(data-toggle='tab', href='#menu2') Menu 2
+	// Tab panes
+	.tab-content
+		#home.container.tab-pane.active
+			br
+			h3 HOME
+			p
+				| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		#menu1.container.tab-pane.fade
+			br
+			h3 Menu 1
+			p
+				| Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		#menu2.container.tab-pane.fade
+			br
+			h3 Menu 2
+			p
+				| Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.

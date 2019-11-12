@@ -228,7 +228,15 @@ gulp.task('bootstrap-jquery-assets' , () => {
 		.pipe( gulp.dest(`${dir.dist}/assets/js/`));
 });
 
-gulp.task('dev', ['bootstrap-style-assets','bootstrap-js-assets', 'bootstrap-jquery-assets', 'styles-dev', 'pug-dev', 'scripts-dev', 'images-dev','audios-dev', 'videos-dev', 'fonts-dev'], () => {
+
+gulp.task('load-assets', ['bootstrap-style-assets','bootstrap-js-assets', 'bootstrap-jquery-assets', 'styles-dev', 'pug-dev', 'scripts-dev', 'images-dev','audios-dev', 'videos-dev', 'fonts-dev'], () => {
+
+
+});
+
+
+
+gulp.task('dev', ['styles-dev', 'pug-dev', 'scripts-dev'], () => {
 	server.init({
 		server: {
 			baseDir: './public'
@@ -265,7 +273,6 @@ gulp.task('humans', function () {
 		}))
 		.pipe(gulp.dest('./public'))
 });
-
 
 gulp.task('build', ['pug-build', 'scripts-build', 'images-build', 'cache', 'sitemap', 'humans', 'styles-build'], () => {
 	server.init({
