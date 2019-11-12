@@ -38,7 +38,7 @@
     <!--here is the Tweeter Cards section-->
     <!--here cdn fonts-->
     <!--here is the cdn styles-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css?t=1573528190093">
     <title>Home | Layouts</title>
   </head>
   <body class="home" itemscope itemtype="http://schema.org/WebPage"><!--[if lt IE 8]>
@@ -50,6 +50,193 @@
     <!--here ends the Main Header-->
     <!--here start the Main Container-->
     <main class="main-container">
+      <section class="grid-practice">
+        <div class="container">
+          <h1 class="text-center">grid practice</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col"><span>item 1</span></div>
+            <div class="col"><span>item 2</span></div>
+            <div class="col"><span>item 3</span></div>
+            <div class="col"><span>item 4</span></div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="row">
+          <div class="col mt-3">
+            <h2>Modal Example</h2>
+            <!-- Button to Open the Modal-->
+            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal">Open modal</button>
+            <!-- The Modal-->
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header-->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button class="close" type="button" data-dismiss="modal">×</button>
+                  </div>
+                  <!-- Modal body-->
+                  <div class="modal-body">Modal body..</div>
+                  <!-- Modal footer-->
+                  <div class="modal-footer">
+                    <button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col mt-3">
+            <h3>Popover Example</h3>
+            <p>Popovers must be initialized with jQuery: select the specified element and call the popover() method.</p><a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="margin-bottom:15px">
+        <div class="row">
+          <div class="col mt-3">
+            <h3>Tooltip Example</h3>
+            <p>The data-placement attribute specifies the tooltip position.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"><a class="btn btn-primary" href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a></div>
+          <div class="col"><a class="btn btn-primary" href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a></div>
+          <div class="col"><a class="btn btn-primary" href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a></div>
+          <div class="col"><a class="btn btn-primary" href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col mt-3">
+            <div class="accordion" id="accordionExample">
+              <div class="card z-depth-0 bordered">
+                <div class="card-header" id="headingOne">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Collapsible Group Item #1</button>
+                </div>
+                <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">Panel Collapse 1</div>
+                </div>
+              </div>
+              <div class="card z-depth-0 bordered">
+                <div class="card-header" id="headingTwo">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Collapsible Group Item #2</button>
+                </div>
+                <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">Panel Collapse 2</div>
+                </div>
+              </div>
+              <div class="card z-depth-0 bordered">
+                <div class="card-header" id="headingThree">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Collapsible Group Item #3</button>
+                </div>
+                <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">Panel Collapse 3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3">
+        <h2>Toggleable Tabs</h2><br>
+        <!-- Nav tabs-->
+        <ul class="nav nav-tabs">
+          <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a></li>
+          <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a></li>
+        </ul>
+        <!-- Tab panes-->
+        <div class="tab-content">
+          <div class="container tab-pane active" id="home"><br>
+            <h3>HOME</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="container tab-pane fade" id="menu1"><br>
+            <h3>Menu 1</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="container tab-pane fade" id="menu2"><br>
+            <h3>Menu 2</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <button class="btn btn-primary" data-toggle="collapse" data-target="#demo">Collapsible</button>
+            <div class="collapse" id="demo">Lorem ipsum dolor text....</div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3">
+        <h2>Filterable Table</h2>
+        <p>Type something in the input field to search the table for first names, last names or emails:</p>
+        <input class="form-control" id="myInput" type="text" placeholder="Search.."><br>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@mail.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@greatstuff.com</td>
+            </tr>
+            <tr>
+              <td>Anja</td>
+              <td>Ravendale</td>
+              <td>a_r@test.com</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-center">Alerts</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="alert alert-primary" role="alert">This is a primary alert—check it out!</div>
+            <div class="alert alert-secondary" role="alert">This is a secondary alert—check it out!</div>
+            <div class="alert alert-success" role="alert">This is a success alert—check it out!</div>
+            <div class="alert alert-danger" role="alert">This is a danger alert—check it out!</div>
+            <div class="alert alert-warning" role="alert">This is a warning alert—check it out!</div>
+            <div class="alert alert-info" role="alert">This is a info alert—check it out!</div>
+            <div class="alert alert-light" role="alert">This is a light alert—check it out!</div>
+            <div class="alert alert-dark" role="alert">This is a dark alert—check it out!</div>
+          </div>
+        </div>
+      </div>
       <div class="ed-container">
         <div class="ed-item"><ul>
 <li>Lorem ipsum dolor sit amet consectetur adipisicing <code>elit</code>.</li>
@@ -112,6 +299,9 @@
     </footer>
     <!--here ends the Main Footer-->
     <!--cdn libraries here-->
-    <script src="assets/js/scripts-min.js"></script>
+    <script src="assets/js/jquery.min.js?t=1573528190093"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js?t=1573528190093"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js?t=1573528190093"></script>
+    <script src="assets/js/scripts-min.js?t=1573528190093"></script>
   </body>
 </html>
