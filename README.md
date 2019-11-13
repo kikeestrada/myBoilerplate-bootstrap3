@@ -9,4 +9,4 @@
 * json-data
 * gh-pages
 
-gh-pages repository: https://kikeestrada.github.io/myBoilerplate-bootstrap4
+gh-pages repository: https://kikeestrada.github.io/myBoilerplate-bootstrap3
