@@ -212,13 +212,19 @@ gulp.task('sitemap', () => {
 
 gulp.task('bootstrap-style-assets' , () => {
 	gulp
-		.src(`${dir.nm}/bootstrap/scss/**/*.*`)
+		.src(`${dir.nm}/bootstrap-sass/assets/stylesheets/**/*.*`)
 		.pipe( gulp.dest(`${dir.src}/scss/bootstrap/`));
+});
+
+gulp.task('bootstrap-fonts', () => {
+	gulp
+		.src(`${dir.nm}/bootstrap-sass/assets/fonts/bootstrap/**/*.*`)
+		.pipe(gulp.dest('./public/assets/fonts'))
 });
 
 gulp.task('bootstrap-js-assets' , () => {
 	gulp
-		.src(`${dir.nm}/bootstrap/dist/js/**/*.*`)
+		.src(`${dir.nm}/bootstrap-sass/assets/javascripts/bootstrap.min.js`)
 		.pipe( gulp.dest(`${dir.dist}/assets/js/bootstrap/`));
 });
 
@@ -229,7 +235,7 @@ gulp.task('bootstrap-jquery-assets' , () => {
 });
 
 
-gulp.task('load-assets', ['bootstrap-style-assets','bootstrap-js-assets', 'bootstrap-jquery-assets', 'styles-dev', 'pug-dev', 'scripts-dev', 'images-dev','audios-dev', 'videos-dev', 'fonts-dev'], () => {
+gulp.task('load-assets', ['bootstrap-style-assets','bootstrap-js-assets', 'bootstrap-fonts', 'bootstrap-jquery-assets', 'styles-dev', 'pug-dev', 'scripts-dev', 'images-dev','audios-dev', 'videos-dev', 'fonts-dev'], () => {
 
 
 });

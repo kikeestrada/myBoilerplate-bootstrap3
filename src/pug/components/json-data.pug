@@ -3,6 +3,9 @@ mixin card(cardImage, cardTitle)
 		img(src=cardImage, style='width:100px')
 		p=cardTitle
 
--for(var i = 0; i < casos.length ; i++)
-	-var caso = casos[i]
-	+card(caso.img, caso.title)
+div(class='container')
+	div(class='row')
+		div(class='col-xs-12')
+			-for(var i = 0; i < casos.length ; i++)
+				-var caso = casos[i]
+				+card(caso.img, caso.title)
